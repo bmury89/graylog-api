@@ -44,8 +44,7 @@ Object.keys(methods).forEach(function (mName) {
       method: m.method,
       headers: {
         Accept: "application/json",
-        "Content-Type": "application/json",
-        "X-Requested-By": "XMLHttpRequest"
+        "Content-Type": "application/json"
       },
       body: m.method !== "GET" && parameters ? parameters : null,
       json: false
